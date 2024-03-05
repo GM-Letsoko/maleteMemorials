@@ -113,57 +113,62 @@
               </li>
               <li>
                 Community-Centric: Our history is intertwined with the community
-                we serve, participating in<span id="dots">...</span
-                  ><span id="more"> local events and
-                providing educational outreach.
+                we serve, participating in local events and providing
+                educational outreach.<span id="dots">..</span>
               </li>
             </ul>
-            <h2>Our Philosophy:</h2>
-            <ul>
-              <li>
-                Compassion at Our Core: We believe in the power of empathy,
-                ensuring that every family is met with understanding and warmth.
-              </li>
-              <li>
-                Excellence in Service: Our pursuit of perfection drives us to
-                provide only the highest standard of service.
-              </li>
-              <li>
-                Innovation in Memorialization: We embrace new ways to celebrate
-                life, incorporating modern technology and personalized options.
-              </li>
-            </ul>
-            <h2>Our Promise:</h2>
-            <ul>
-              <li>
-                To You and Your Loved Ones: We vow to honor your family’s wishes
-                with the utmost respect and to create a memorable service that
-                pays tribute to the life lived.
-              </li>
-              <li>
-                To Our Community: We pledge to continue our support and
-                involvement, enriching the lives of those around us.
-              </li>
-            </ul>
-            <h2>Our Team:</h2>
-            <ul>
-              <li>
-                Skilled Professionals: Our team comprises experienced
-                professionals who are not only experts in their field but also
-                compassionate individuals dedicated to serving you.
-              </li>
-              <li>
-                Continuous Learning: We believe in lifelong learning and
-                regularly train our staff in the latest best practices in
-                memorial care.
-              </li>
-            </ul>
-            <p>
-              Our Invitation: We invite you to learn more about our story and
-              how we can assist you in honoring your loved one. Visit us or
-              reach out; we are here to share in your journey and provide a
-              guiding light.
-            </p></span>
+
+            <span id="more">
+              <h2>Our Philosophy:</h2>
+              <ul>
+                <li>
+                  Compassion at Our Core: We believe in the power of empathy,
+                  ensuring that every family is met with understanding and
+                  warmth.
+                </li>
+                <li>
+                  Excellence in Service: Our pursuit of perfection drives us to
+                  provide only the highest standard of service.
+                </li>
+                <li>
+                  Innovation in Memorialization: We embrace new ways to
+                  celebrate life, incorporating modern technology and
+                  personalized options.
+                </li>
+              </ul>
+              <h2>Our Promise:</h2>
+              <ul>
+                <li>
+                  To You and Your Loved Ones: We vow to honor your family’s
+                  wishes with the utmost respect and to create a memorable
+                  service that pays tribute to the life lived.
+                </li>
+                <li>
+                  To Our Community: We pledge to continue our support and
+                  involvement, enriching the lives of those around us.
+                </li>
+              </ul>
+              <h2>Our Team:</h2>
+              <ul>
+                <li>
+                  Skilled Professionals: Our team comprises experienced
+                  professionals who are not only experts in their field but also
+                  compassionate individuals dedicated to serving you.
+                </li>
+                <li>
+                  Continuous Learning: We believe in lifelong learning and
+                  regularly train our staff in the latest best practices in
+                  memorial care.
+                </li>
+              </ul>
+              <p>
+                Our Invitation: We invite you to learn more about our story and
+                how we can assist you in honoring your loved one. Visit us or
+                reach out; we are here to share in your journey and provide a
+                guiding light.
+              </p>
+            </span>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
           </div>
         </div>
       </div>
@@ -193,6 +198,23 @@
     </section>
 
     <!-- Scripts -->
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/browser.min.js"></script>

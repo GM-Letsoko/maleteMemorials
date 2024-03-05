@@ -3627,3 +3627,7 @@ body.is-preload #header:after {
     padding: 2em 1em 2em 1em;
   }
 }
+
+#more {
+  display: none;
+}
